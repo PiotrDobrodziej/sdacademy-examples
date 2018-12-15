@@ -2,6 +2,7 @@ package pl.sdacademy.io;
 
 import java.io.*;
 import java.net.URLConnection;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class IoExample {
@@ -24,8 +25,6 @@ public class IoExample {
       bufferedWriter.write("String testowy 22");
       bufferedWriter.flush();
     }
-
-
 
 
   }
