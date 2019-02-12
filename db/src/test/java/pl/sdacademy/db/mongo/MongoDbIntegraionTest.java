@@ -80,9 +80,11 @@ public class MongoDbIntegraionTest {
 	@Test
 	void collection() {
 		// given
+
 		MongoDatabase database = mongoClient.getDatabase("testDb");
 		Document movieDoc = new Document("title", "title of the movie").append("genres", Arrays.asList
 			("genre0", "genre1"));
+
 
 		// when
 		MongoCollection<Document> collection = database.getCollection("testCollection");
